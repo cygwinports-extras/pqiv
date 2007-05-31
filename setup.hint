@@ -1,0 +1,6 @@
+category: Graphics
+requires: python python-gobject2 python-gtk2
+sdesc: "PyGTK simple image viewer"
+ldesc: "A very simple PyGTK image viewer, meant as a replacement for 
+qiv. Its features are limited to fullscreen, slideshows, rotate, scale 
+and mirror."
