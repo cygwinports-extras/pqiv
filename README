@@ -1,13 +1,13 @@
 pqiv
 ------------------------------------------
-A very simple PyGTK image viewer, meant as a replacement for qiv. Its 
-features are limited to fullscreen, slideshows, rotate, scale and 
-mirror.
+Pretty Quick Image Viewer, meant as a GTK+2 replacement for qiv.
 
 Runtime requirements:
-  python-2.5.1-1
-  python-gobject2-2.12.3-2
-  python-gtk2-2.10.4-2
+  cygwin-1.5.24-2
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  pango-1.16.4-1
 
 Canonical website:
   http://www.pberndt.com/Programme/Linux/pqiv/index.html
@@ -18,29 +18,32 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pqiv-0.2-X-src.tar.bz2
+  unpack pqiv-0.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pqiv-0.2-X.cygport all
+  cygport ./pqiv-0.4-X.cygport all
 
 This will create:
-  /usr/src/pqiv-0.2-X-src.tar.bz2
-  /usr/src/pqiv-0.2-X.tar.bz2
+  /usr/src/pqiv-0.4-X-src.tar.bz2
+  /usr/src/pqiv-0.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/bin/pqiv
-  /usr/share/doc/Cygwin/pqiv-0.2.README
-  /usr/share/doc/pqiv-0.2/GPL.txt
-  /usr/share/doc/pqiv-0.2/README
+  /usr/bin/pqiv.exe
+  /usr/share/doc/Cygwin/pqiv-0.4.README
+  /usr/share/doc/pqiv-0.4/GPL.txt
+  /usr/share/doc/pqiv-0.4/README
   /usr/share/man/man1/pqiv.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.4-1 -----
+Version bump, now written in C.
 
 ----- version 0.2-1 -----
 Version bump.

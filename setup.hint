@@ -1,6 +1,4 @@
-category: Graphics
-requires: python python-gobject2 python-gtk2
-sdesc: "PyGTK simple image viewer"
-ldesc: "A very simple PyGTK image viewer, meant as a replacement for 
-qiv. Its features are limited to fullscreen, slideshows, rotate, scale 
-and mirror."
+category: Graphics Gnome
+requires: cygwin gdk-pixbuf2 glib2 gtk2-x11 pango
+sdesc: "Pretty Quick Image Viewer"
+ldesc: "Pretty Quick Image Viewer, meant as a GTK+2 replacement for qiv."
