@@ -18,15 +18,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pqiv-0.5-X-src.tar.bz2
+  unpack pqiv-0.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pqiv-0.5-X.cygport all
+  cygport ./pqiv-0.6-X.cygport all
 
 This will create:
-  /usr/src/pqiv-0.5-X-src.tar.bz2
-  /usr/src/pqiv-0.5-X.tar.bz2
+  /usr/src/pqiv-0.6-X-src.tar.bz2
+  /usr/src/pqiv-0.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -34,15 +34,18 @@ Files included in the binary package:
 
   /usr/bin/pqiv
   /usr/bin/qiv.exe
-  /usr/share/doc/Cygwin/pqiv-0.5.README
-  /usr/share/doc/pqiv-0.5/GPL.txt
-  /usr/share/doc/pqiv-0.5/README
+  /usr/share/doc/Cygwin/pqiv-0.6.README
+  /usr/share/doc/pqiv-0.6/GPL.txt
+  /usr/share/doc/pqiv-0.6/README
   /usr/share/man/man1/pqiv.1.gz
   /usr/share/man/man1/qiv.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.6-1 -----
+Version bump.
 
 ----- version 0.5-1 -----
 Version bump; replaces obsolete qiv package.
