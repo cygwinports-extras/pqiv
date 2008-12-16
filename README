@@ -3,11 +3,12 @@ pqiv
 Pretty Quick Image Viewer, meant as a GTK+2 replacement for qiv.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.14.6-1
-  gtk2-x11-2.12.9-1
-  pango-1.18.4-1
+  cygwin-1.5.25-15
+  libcairo2-1.8.4-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
 
 Canonical website:
   http://www.pberndt.com/Programme/Linux/pqiv/index.html
@@ -18,15 +19,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pqiv-0.7.1-X-src.tar.bz2
+  unpack pqiv-0.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pqiv-0.7.1-X.cygport all
+  cygport ./pqiv-0.8-X.cygport all
 
 This will create:
-  /usr/src/pqiv-0.7.1-X-src.tar.bz2
-  /usr/src/pqiv-0.7.1-X.tar.bz2
+  /usr/src/pqiv-0.8-X-src.tar.bz2
+  /usr/src/pqiv-0.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -34,14 +35,17 @@ Files included in the binary package:
 
   /usr/bin/pqiv
   /usr/bin/qiv.exe
-  /usr/share/doc/pqiv-0.7.1/GPL.txt
-  /usr/share/doc/pqiv-0.7.1/README
+  /usr/share/doc/pqiv-0.8/GPL.txt
+  /usr/share/doc/pqiv-0.8/README
   /usr/share/man/man1/pqiv.1.gz
   /usr/share/man/man1/qiv.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.8-1 -----
+Version bump.
 
 ----- version 0.7.1-1 -----
 Version bump.

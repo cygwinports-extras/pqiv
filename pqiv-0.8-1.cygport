@@ -5,9 +5,7 @@ SRC_URI="http://www.pberndt.com/raw/Programme/Linux/pqiv/_download/${P}.tbz"
 src_compile() {
 	lndirs
 	cd ${B}
-	./configure \
-		--prefix=/usr --no-compositing --no-inotify \
-		|| error "configure failed"
+	./configure --prefix=/usr --no-inotify || error "configure failed"
 	cygmake
 }
 
