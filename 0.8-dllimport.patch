@@ -1,0 +1,19 @@
+pqiv.c:58: warning: 'optarg' redeclared without dllimport attribute: 
+previous dllimport ignored
+
+These are already declared by #include <unistd.h>, so remove them here.
+
+--- origsrc/pqiv-0.8/pqiv.c	2008-12-07 11:53:12.000000000 -0600
++++ src/pqiv-0.8/pqiv.c	2009-03-17 19:29:14.764352500 -0500
+@@ -54,11 +54,6 @@
+ #define DRAG_MAX_TIME 150
+ #define SECONDS_TILL_LOADING_INFO 5 /* Undef to disable */
+ 
+-/* libc stuff */
+-extern char *optarg;
+-extern int optind, opterr, optopt;
+-extern char **environ;
+-
+ /* GTK stuff */
+ static GtkWidget *window = NULL;
+ static GtkWidget *imageWidget = NULL;

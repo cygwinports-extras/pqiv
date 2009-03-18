@@ -3,12 +3,20 @@ pqiv
 Pretty Quick Image Viewer, meant as a GTK+2 replacement for qiv.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcairo2-1.8.4-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libpango1.0_0-1.22.3-1
+  cygwin-1.7.0-43
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libpango1.0_0-1.24.0-1
+
+Build requirements:
+  cygport-0.9.5-1
+  debianutils-2.31-1
+  gcc4-core-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23a-2
 
 Canonical website:
   http://www.pberndt.com/Programme/Linux/pqiv/index.html
@@ -35,8 +43,8 @@ Files included in the binary package:
 
   /usr/bin/pqiv
   /usr/bin/qiv.exe
-  /usr/share/doc/pqiv-0.8/GPL.txt
-  /usr/share/doc/pqiv-0.8/README
+  /usr/share/doc/pqiv/GPL.txt
+  /usr/share/doc/pqiv/README
   /usr/share/man/man1/pqiv.1.gz
   /usr/share/man/man1/qiv.1.gz
 
@@ -44,26 +52,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.8-1 -----
-Version bump.
-
------ version 0.7.1-1 -----
-Version bump.
-
------ version 0.6-1 -----
-Version bump.
-
------ version 0.5-1 -----
-Version bump; replaces obsolete qiv package.
-
------ version 0.4-1 -----
-Version bump, now written in C.
-
------ version 0.2-1 -----
-Version bump.
-
------ version 0.1-1 -----
-Initial release for Cygwin.
+----- version 0.8-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

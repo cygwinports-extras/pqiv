@@ -1,4 +1,4 @@
 category: Graphics Gnome
-requires: cygwin libcairo2 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libpango1.0_0
+requires: cygwin libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libpango1.0_0
 sdesc: "Pretty Quick Image Viewer"
 ldesc: "Pretty Quick Image Viewer, meant as a GTK2 replacement for qiv."
