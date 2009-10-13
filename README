@@ -3,20 +3,20 @@ pqiv
 Pretty Quick Image Viewer, meant as a GTK+2 replacement for qiv.
 
 Runtime requirements:
-  cygwin-1.7.0-43
-  libcairo2-1.8.6-10
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.0-1
-  libglib2.0_0-2.20.0-1
-  libgtk2.0_0-2.16.0-1
-  libpango1.0_0-1.24.0-1
+  cygwin-1.7.0-62
+  libcairo2-1.8.8-1
+  libgcc1-4.3.4-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
+  libpango1.0_0-1.24.5-1
 
 Build requirements:
-  cygport-0.9.5-1
+  cygport-0.9.9-1
   debianutils-2.31-1
-  gcc4-core-4.3.2-2
+  gcc4-core-4.3.4-1
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
 
 Canonical website:
   http://www.pberndt.com/Programme/Linux/pqiv/index.html
@@ -27,30 +27,32 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pqiv-0.8-X-src.tar.bz2
+  unpack pqiv-0.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pqiv-0.8-X.cygport all
+  cygport ./pqiv-0.10-X.cygport all
 
 This will create:
-  /usr/src/pqiv-0.8-X-src.tar.bz2
-  /usr/src/pqiv-0.8-X.tar.bz2
+  /usr/src/pqiv-0.10-X-src.tar.bz2
+  /usr/src/pqiv-0.10-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/bin/pqiv
-  /usr/bin/qiv.exe
-  /usr/share/doc/pqiv/GPL.txt
+  /usr/bin/pqiv.exe
   /usr/share/doc/pqiv/README
+  /usr/share/doc/pqiv/gpl.txt
   /usr/share/man/man1/pqiv.1.gz
-  /usr/share/man/man1/qiv.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.10-1 -----
+Version bump.
+Removed qiv symlinks, as qiv is maintained upstream again.
 
 ----- version 0.8-10 -----
 Initial release for Cygwin 1.7.

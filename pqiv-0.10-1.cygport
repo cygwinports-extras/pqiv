@@ -15,6 +15,7 @@ src_test() { :; }
 
 src_install() {
 	cd ${B}
-	cyginstall
-	dosym qiv.exe /usr/bin/pqiv
+	newbin qiv.exe pqiv.exe
+	newman qiv.1 pqiv.1
 }
+DOCS="gpl.txt"
