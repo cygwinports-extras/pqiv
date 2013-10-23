@@ -1,0 +1,19 @@
+NAME="pqiv"
+VERSION=2.0
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="Pretty Quick Image Viewer"
+DESCRIPTION="Pretty Quick Image Viewer, meant as a GTK2 replacement for qiv."
+HOMEPAGE="http://www.pberndt.com/Programme/Linux/pqiv/index.html"
+#SRC_URI="https://github.com/phillipberndt/pqiv/archive/${VERSION}.tar.gz"
+SRC_URI="mirror://gentoo/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	CC=${CC} \
+	./configure --prefix=/usr || error "configure failed"
+	cygmake CFLAGS="${CFLAGS}"
+}
+
+DOCS="gpl.txt"
