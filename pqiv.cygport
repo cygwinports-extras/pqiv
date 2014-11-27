@@ -1,12 +1,11 @@
 NAME="pqiv"
-VERSION=2.0
+VERSION=2.2
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Pretty Quick Image Viewer"
 DESCRIPTION="Pretty Quick Image Viewer, meant as a GTK2 replacement for qiv."
 HOMEPAGE="http://www.pberndt.com/Programme/Linux/pqiv/index.html"
-#SRC_URI="https://github.com/phillipberndt/pqiv/archive/${VERSION}.tar.gz"
-SRC_URI="mirror://gentoo/${NAME}-${VERSION}.tar.gz"
+SRC_URI="https://github.com/phillipberndt/pqiv/archive/${VERSION}/pqiv-${VERSION}.tar.gz"
 
 src_compile() {
 	lndirs
@@ -16,4 +15,13 @@ src_compile() {
 	cygmake CFLAGS="${CFLAGS}"
 }
 
-DOCS="gpl.txt"
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# uses GdkPixbuf, same as Eog/Eom
+	make_desktop_entry pqiv "pqiv" "" "Graphics;Viewer" "" "NoDisplay=true" \
+		"MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-bmp;image/x-gray;image/x-icb;image/x-ico;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/x-pcx;image/svg+xml;image/svg+xml-compressed;image/vnd.wap.wbmp;"
+}
+
+DOCS="gpl.txt README.markdown"
